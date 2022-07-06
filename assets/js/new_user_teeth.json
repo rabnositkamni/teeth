@@ -1,0 +1,260 @@
+{
+	"userNameTeeth": {
+		"top_left_8": {
+			"toothName": "Третий моляр (большой коренной, зуб мудрости), левый №8",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_7": {
+			"toothName": "Второй моляр (большой коренной), левый №7",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_6": {
+			"toothName": "Первый моляр (большой коренной), левый №6",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_5": {
+			"toothName": "Второй премоляр (малый коренной), левый №5",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_4": {
+			"toothName": "Первый премоляр (малый коренной), левый №4",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_3": {
+			"toothName": "Клык, левый №3",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_2": {
+			"toothName": "Боковой резец, левый №2",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_left_1": {
+			"toothName": "Центральный резец, левый №1",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_1": {
+			"toothName": "Центральный резец, правый №1",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_2": {
+			"toothName": "Боковой резец, правый №2",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_3": {
+			"toothName": "Клык, правый №7",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_4": {
+			"toothName": "Первый премоляр (малый коренной), правый №4",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_5": {
+			"toothName": "Второй премоляр (малый коренной), правый №5",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_6": {
+			"toothName": "Первый моляр (большой коренной), правый №6",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_7": {
+			"toothName": "Второй моляр (большой коренной), правый №7",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"top_rigt_8": {
+			"toothName": "Третий моляр (большой коренной, зуб мудрости), правый №8",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_8": {
+			"toothName": "Третий моляр (большой коренной, зуб мудрости), №8",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_7": {
+			"toothName": "Второй моляр (большой коренной), левый №7",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_6": {
+			"toothName": "Первый моляр (большой коренной), левый №6",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_5": {
+			"toothName": "Второй премоляр (малый коренной), левый №5",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_4": {
+			"toothName": "Первый премоляр (малый коренной), левый №4",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_3": {
+			"toothName": "Клык, левый №3",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_2": {
+			"toothName": "Резец, левый №2",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_left_1": {
+			"toothName": "Резец, левый №1",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_1": {
+			"toothName": "Резец, правый №1",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_2": {
+			"toothName": "Резец, правый №2",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_3": {
+			"toothName": "Клык, правый №3",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_4": {
+			"toothName": "Первый премоляр (малый коренной), левый №4",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_5": {
+			"toothName": "Второй премоляр (малый коренной), левый №5",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_6": {
+			"toothName": "Первый моляр (большой коренной), правый №6",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_7": {
+			"toothName": "Второй моляр (большой коренной), правый №7",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		},
+		"bottom_rigt_8": {
+			"toothName": "Третий моляр (большой коренной, зуб мудрости), правый №8",
+			"toothPresence": true,
+			"toothPulp": true,
+			"toothFilling": false,
+			"toothCrown": false,
+			"notes": {}
+		}
+	}
+}

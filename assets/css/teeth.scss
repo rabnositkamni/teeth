@@ -1,0 +1,103 @@
+// font-family: 'Nunito', sans-serif;
+p, span {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.8vw);
+}
+
+.section__teeth {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+.teeth__all {
+    position: absolute;
+    width: inherit;
+    top: 0;
+}
+.teeth__top, .teeth__bottom {
+    display: flex;
+    width: 100%;
+    div {
+        width: inherit;
+        height: calc(100vw/8.5);
+        background-color: greenyellow;
+        border: 2px solid gray;
+        opacity: 0.2;
+    }
+}
+
+.teeth__top {
+    .top_left_8,
+    .top_left_7,
+    .top_left_6,
+    .top_rigt_6,
+    .top_rigt_7,
+    .top_rigt_8 {
+        width: 120%;
+    }
+    .top_left_1,
+    .top_rigt_1 {
+        width: 120%;
+    }
+}
+
+.teeth__bottom {
+    .top_left_8,
+    .top_left_7,
+    .top_left_6,
+    .top_rigt_6,
+    .top_rigt_7,
+    .top_rigt_8 {
+        width: 120%;
+    }
+    .bottom_left_3,
+    .bottom_left_2,
+    .bottom_left_1,
+    .bottom_rigt_1,
+    .bottom_rigt_2,
+    .bottom_rigt_3 {
+        width: 60%;
+    }
+    .bottom_left_5,
+    .bottom_left_4,
+    .bottom_rigt_4,
+    .bottom_rigt_5 {
+        width: 70%;
+    }
+    .bottom__additional {
+        width: 50%;
+    }
+}
+
+.tooth {
+    cursor: pointer;
+}
+.tooth.open_info {
+    cursor: help;
+    opacity: 0.5;
+}
+
+// tooth__reviews
+
+.tooth__reviews {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tooth__info {
+    border: 3px solid #30C7B8;
+    border-radius: 11px;
+    padding: 13px;
+}
+.tooth__info--item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.tooth__info--item span{
+    + span {
+        color: #707070;
+    }
+}
