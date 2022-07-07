@@ -6,6 +6,12 @@ let teeth = document.querySelectorAll('.tooth'),
     toothCrown = document.querySelector('.tooth__crown').nextElementSibling,
     chousedTooth,
     userNameTeeth;
+// Обрабатываем нажатие кнопки отправки
+document.querySelector('#send__info').addEventListener('click', modificationInfo)
+// пеербираем массив в поисках нажатого элемента
+teeth.forEach(element => {
+    element.addEventListener('click', openInfo)
+})
 
 // получаем зубные данные с удалённого сервера
 fetch('https://my-json-server.typicode.com/rabnositkamni/db/db')
@@ -13,15 +19,28 @@ fetch('https://my-json-server.typicode.com/rabnositkamni/db/db')
 .then(json => {
     userNameTeeth = json.userNameTeeth;
     console.log('Данные скачаны успешно')
+    updatePresenceTeeth();
 })
 .catch(error => console.log(error.message))
 
-// пеербираем массив в поисках нажатого элемента
-teeth.forEach(element => {
-    element.addEventListener('click', openInfo)
-})
-// Обрабатываем нажатие кнопки отправки
-document.querySelector('#send__info').addEventListener('click', modificationInfo)
+
+function updatePresenceTeeth() {
+    // перебираем объект, если в каком-то из объектов отсутствует зуб, то:
+    // перебираем массив показываемых зубов, и если дата атрибут совпадает с именем объекта, где отсутствует зуб:
+    // добавляем этому элементу класс missing
+    for (let key in userNameTeeth) {
+        if (userNameTeeth[key].toothPresence === false) {
+            // console.log(key)
+            teeth.forEach( element => {
+                let ourtooth = element.getAttribute('data-tooth-number')
+                if (ourtooth === key) {
+                    element.classList.add('missing');
+                }
+            })
+        }
+    }
+}
+
 
 // удаление класса open_info у предыдущего элемента и добавление его нажатому элементу
 function openInfo() {

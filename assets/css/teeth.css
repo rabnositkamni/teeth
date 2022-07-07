@@ -29,9 +29,10 @@ p, span {
 .teeth__top div, .teeth__bottom div {
   width: inherit;
   height: calc(100vw/8.5);
-  background-color: greenyellow;
   border: 2px solid gray;
   opacity: 0.2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .teeth__top .top_left_8,
@@ -75,15 +76,22 @@ p, span {
 
 .teeth__bottom .bottom__additional {
   width: 50%;
+  border-color: transparent;
 }
 
 .tooth {
   cursor: pointer;
 }
 
+.tooth.missing {
+  background-color: white;
+  opacity: 0.9;
+  border-color: white;
+}
+
 .tooth.open_info {
   cursor: help;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .tooth__reviews {

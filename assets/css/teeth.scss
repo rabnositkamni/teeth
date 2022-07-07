@@ -23,9 +23,9 @@ p, span {
     div {
         width: inherit;
         height: calc(100vw/8.5);
-        background-color: greenyellow;
         border: 2px solid gray;
         opacity: 0.2;
+        transition: 0.3s;
     }
 }
 
@@ -69,15 +69,21 @@ p, span {
     }
     .bottom__additional {
         width: 50%;
+        border-color: transparent;
     }
 }
 
 .tooth {
     cursor: pointer;
+    &.missing {
+        background-color: white;
+        opacity: 0.9;
+        border-color: white;
+    }
 }
 .tooth.open_info {
     cursor: help;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 // tooth__reviews
@@ -101,3 +107,4 @@ p, span {
         color: #707070;
     }
 }
+
