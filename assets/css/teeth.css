@@ -1,12 +1,33 @@
 p, span {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: calc(0.8rem + 0.8vw);
+  font-size: calc(0.5rem + 0.6vw);
+  color: #707070;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+}
+
+h4 {
+  font-size: calc(0.5rem + 0.8vw);
+}
+
+.section + .section {
+  margin-top: 1.2vw;
 }
 
 .section__teeth {
   width: 100%;
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section__teeth img {
@@ -33,6 +54,12 @@ p, span {
   opacity: 0.2;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (min-width: 1200px) {
+  .teeth__top div, .teeth__bottom div {
+    height: 145px;
+  }
 }
 
 .teeth__top .top_left_8,
@@ -84,7 +111,7 @@ p, span {
 }
 
 .tooth.missing {
-  background-color: white;
+  background-color: #ffffff;
   opacity: 0.9;
   border-color: white;
 }
@@ -94,12 +121,17 @@ p, span {
   opacity: 1;
 }
 
+.tooth.open_info.missing {
+  opacity: 0.6;
+  border: 2px solid gray;
+}
+
 .tooth__reviews {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.tooth__info {
+.tooth__info, .tooth__note {
   border: 3px solid #30C7B8;
   border-radius: 11px;
   padding: 13px;
@@ -112,7 +144,34 @@ p, span {
       grid-template-columns: 1fr 2fr;
 }
 
-.tooth__info--item span + span {
-  color: #707070;
+.tooth__note--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tooth__note {
+  cursor: pointer;
+}
+
+.tooth__note + .tooth__note {
+  margin-top: 1.2vw;
+}
+
+.tooth__note--text {
+  -webkit-transition: height 0.5s, opacity 1s;
+  transition: height 0.5s, opacity 1s;
+  overflow: hidden;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+.close {
+  opacity: 0;
 }
 /*# sourceMappingURL=teeth.css.map */

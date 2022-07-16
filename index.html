@@ -11,7 +11,7 @@
 <body>
     <section class="section section__teeth">
         <img src="../assets/images/teeth_top_view.jpg" alt="teeth">
-        <div class="teeth__all">
+        <div class="section teeth__all">
             <div class="teeth__top">
                 <div class="top_left_8 tooth" data-tooth-number="top_left_8"></div>
                 <div class="top_left_7 tooth" data-tooth-number="top_left_7"></div>
@@ -51,36 +51,45 @@
                 <div class="bottom__additional"></div>
             </div>
         </div>
-        <div class="tooth__reviews">
+        <div class="section tooth__reviews">
             <div class="tooth__info">
                 <div class="tooth__info--item">
-                    <span class="tooth__name">Тип зуба:</span>
+                    <h4 class="tooth__name">Тип зуба:</h4>
                     <span class="tooth__name--value"></span>
                 </div>
                 <div class="tooth__info--item">
-                    <span class="tooth__presence">Наличие зуба:</span>
+                    <h4 class="tooth__presence">Наличие зуба:</h4>
                     <span class="tooth__presence--value"></span>
                 </div>
                 <div class="tooth__info--item">
-                    <span class="tooth__pulp">Наличие нерва:</span>
+                    <h4 class="tooth__pulp">Наличие нерва:</h4>
                     <span class="tooth__pulp--value"></span>
                 </div>
                 <div class="tooth__info--item">
-                    <span class="tooth__filling">Установлена пломба:</span>
+                    <h4 class="tooth__filling">Установлена пломба:</h4>
                     <span class="tooth__filling--value"></span>
                 </div>
                 <div class="tooth__info--item">
-                    <span class="tooth__crown">Установленная коронка:</span>
+                    <h4 class="tooth__crown">Установленная коронка:</h4>
                     <span class="tooth__crown--value"></span>
                 </div>
             </div>
-            <div class="tooth__notes">
+        </div>
+        <div class="section tooth__notes">
+            <div class="tooth__note">
+                <div class="tooth__note--header">
+                    <h4 class="tooth__note--caption"></h4>
+                    <h4 class="tooth__note--header">Выберите зуб, например верхний левый</h4>
+                    <h4 class="tooth__note--money"></h4>
+                </div>
+                <p class="tooth__note--text"></p>
             </div>
         </div>
-        <div class="input__data">
+        <div class="section input__data">
             <label for="test__input">Наличие зуба</label>
             <input type="checkbox" name="" id="test__input">
             <button id="send__info">Отправить это всё</button>
+            <input type="date" name="" id="">
         </div>
     </section>
     <footer class="footer" id="footer" >
@@ -88,4 +97,5 @@
     </footer>
 </body>
 <script src="assets/js/teeth.js"></script>
+<script src="assets/js/assets.js"></script>
 </html>
