@@ -4,8 +4,7 @@ let teeth = document.querySelectorAll('.tooth'),
     toothPulp = document.querySelector('.tooth__pulp').nextElementSibling,
     toothFilling = document.querySelector('.tooth__filling').nextElementSibling,
     toothCrown = document.querySelector('.tooth__crown').nextElementSibling,
-    chousedTooth,
-    userNameTeeth;
+    chousedTooth;
 
 
 // Обрабатываем нажатие кнопки отправки
@@ -46,16 +45,17 @@ function slideUpNotes() {
 
 
 // получаем зубные данные с удалённого сервера (данные с репозитория github аккаунта)
-fetch('https://my-json-server.typicode.com/rabnositkamni/db/db')
-.then(response => response.json())
-.then(json => {
-    userNameTeeth = json.userNameTeeth;
-    console.log('Данные скачаны успешно') // так же отрабатывает когда JSON файл поломанный и оот этого не работает код. Нужно разобраться в чём дело. Но если запускать на сайте в интернете - ведёт себя по другому
-    console.log("Мы скачали:", userNameTeeth)
-    updatePresenceTeeth();
-})
-.catch(error => console.log(error.message))
+// fetch('https://my-json-server.typicode.com/rabnositkamni/db/db')
+// .then(response => response.json())
+// .then(json => {
+//     userNameTeeth = json.userNameTeeth;
+//     console.log('Данные скачаны успешно') // так же отрабатывает когда JSON файл поломанный и оот этого не работает код. Нужно разобраться в чём дело. Но если запускать на сайте в интернете - ведёт себя по другому
+//     console.log("Мы скачали:", userNameTeeth)
+//     updatePresenceTeeth();
+// })
+// .catch(error => console.log(error.message))
 
+updatePresenceTeeth();
 
 function updatePresenceTeeth() {
     // перебираем объект, если в каком-то из объектов отсутствует зуб, то:
@@ -85,15 +85,19 @@ function openInfo() {
     console.log(chousedTooth)
 
     this.classList.add('open_info');
+
     showToothInfo()
 }
+
+console.log(userNameTeeth)
+
 
 
 function showToothInfo() {
     toothName.textContent = userNameTeeth[chousedTooth].toothName; //Для выбора части в ссылке на объект переменной в [] нужно использовать без точки перед скобками.
 
     if (userNameTeeth[chousedTooth].toothPresence === true) {
-        toothPresence.textContent = 'Наместе';
+        toothPresence.textContent = 'На месте';
     } else {
         toothPresence.textContent = 'Потрачено';
     }
@@ -118,19 +122,14 @@ function showToothInfo() {
 
 function showNotes() {
     let ourToothNotes = userNameTeeth[chousedTooth].notes; // массив с заметками (объекты) выбранного зуба
-    let count = 0;
     let startPlaseNotes = document.querySelector('.tooth__notes');
 
     startPlaseNotes.innerHTML = ''; // очищаем поле с заметками
 
-    // считаем есть ли заметки в описании зуба
-    for (let key in ourToothNotes) {
-        count++;
-    }
 
-    console.log("Количество заметок для этого зуба:", ourToothNotes.length)
+    console.log("Заметки этого зуба:", ourToothNotes.length)
 
-    if (count !== 0) {     // если заметки есть, то выполняем следующий код:
+    if (ourToothNotes.length) {     // если заметки есть, то выполняем следующий код:
         ourToothNotes.forEach(note => { // данные каждой заметки назначаем в переменные
             let header = note.action
             let date = note.date
