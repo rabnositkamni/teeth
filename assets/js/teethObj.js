@@ -166,7 +166,7 @@ const userNameTeeth = {
 		"toothFilling": false,
 		"toothCrown": false,
 		"notes": []
-	},
+	}, 
 	"top_rigt_4": {
 		"toothName": "Первый премоляр (малый коренной), правый №4",
 		"toothPresence": true,
