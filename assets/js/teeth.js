@@ -176,3 +176,19 @@ function modificationInfo () {
 // let date = new Date()
 // let dateYMD = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`
 // console.log(dateYMD)
+
+
+
+document.addEventListener("click", () => {
+
+    let tooth__note = document.querySelectorAll('.tooth__note')
+
+    tooth__note.forEach(el => {
+        // el.style.background = 'red';
+    })
+
+    console.log(tooth__note)
+
+    // tooth__note.style.background = 'red';
+})
+
