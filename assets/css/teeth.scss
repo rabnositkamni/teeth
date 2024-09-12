@@ -145,8 +145,8 @@ h4 {
 }
 
 .tooth__note--header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
 }
 .tooth__note--caption {
     @media (max-width: 576px) {

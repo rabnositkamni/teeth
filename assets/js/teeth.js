@@ -144,7 +144,7 @@ function showNotes() {
                     <div class="tooth__note--header">
                         <h4 class="tooth__note--caption">Изменение от:</h4>
                         <h4 class="tooth__note--data">${date}</>
-                        <h4 class="tooth__note--header">${header}</>
+                        <h4 class="tooth__note--title">${header}</>
                         <h4 class="tooth__note--money">₴ ${money}</>
                     </div>
                     <p class="tooth__note--text">${text}</p>
