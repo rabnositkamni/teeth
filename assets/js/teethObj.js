@@ -137,7 +137,14 @@ const userNameTeeth = {
 		"toothPulp": true,
 		"toothFilling": false,
 		"toothCrown": false,
-		"notes": []
+		"notes": [
+			{
+				"date": "2025/05/23",
+				"action": "Пломбировка",
+				"money": "€120",
+				"text": "Пломбировка с 3х сторон"
+			}
+		]
 	},
 	"top_left_1": {
 		"toothName": "Центральный резец, левый №1",
@@ -175,6 +182,12 @@ const userNameTeeth = {
 				"action": "Снятие шины",
 				"money": "4700",
 				"text": "Снимок, осмотр врача и последующее разрешение на снятие шины. После снятия шины зуб был пару дней чувствительным с механическим воздействиям, но в общем всё ок."
+			},
+			{
+				"date": "2025/05/23",
+				"action": "Пломбировка",
+				"money": "€160",
+				"text": "Пломбировка с 3х сторон + штифт"
 			}
 		]
 	},
@@ -190,6 +203,12 @@ const userNameTeeth = {
 				"action": "Пломбировка",
 				"money": "600",
 				"text": "2 пломбы по бокам зуба."
+			},
+			{
+				"date": "2025/05/23",
+				"action": "Пломбировка",
+				"money": "€120",
+				"text": "Пломбировка с 3х сторон"
 			}
 		]
 	},
@@ -211,6 +230,12 @@ const userNameTeeth = {
 				"action": "Пломбировка",
 				"money": "2700",
 				"text": "Переделка немного отошедшей пломбы"
+			},
+			{
+				"date": "2025/05/23",
+				"action": "Пломбировка",
+				"money": "€120",
+				"text": "Пломбировка с 3х сторон"
 			}
 		]
 	},
@@ -277,9 +302,16 @@ const userNameTeeth = {
 		"toothName": "Первый моляр (большой коренной), правый №6",
 		"toothPresence": true,
 		"toothPulp": true,
-		"toothFilling": false,
+		"toothFilling": true,
 		"toothCrown": false,
-		"notes": []
+		"notes": [
+			{
+				"date": "2025/04/17",
+				"action": "Пломбировка",
+				"money": "€120",
+				"text": "Старая пломба выпала, ставили новую."
+			}
+		]
 	},
 	"top_rigt_8": {
 		"toothName": "Первый моляр (большой коренной), правый №6",
@@ -315,9 +347,9 @@ const userNameTeeth = {
 	"bottom_left_6": {
 		"toothName": "Первый моляр (большой коренной), левый №6",
 		"toothPresence": true,
-		"toothPulp": true,
-		"toothFilling": false,
-		"toothCrown": false,
+		"toothPulp": false,
+		"toothFilling": true,
+		"toothCrown": true,
 		"notes": [
 			{
 				"date": "2021/12/15",
@@ -351,7 +383,14 @@ const userNameTeeth = {
 		"toothPulp": true,
 		"toothFilling": false,
 		"toothCrown": false,
-		"notes": []
+		"notes": [
+			{
+				"date": "2025/05/02",
+				"action": "Пломбировка",
+				"money": "€80",
+				"text": "Пломбировка зуба сбоку, возле 6 зуба, который с коронкой"
+			}
+		]
 	},
 	"bottom_left_4": {
 		"toothName": "Первый премоляр (малый коренной), левый №4",
